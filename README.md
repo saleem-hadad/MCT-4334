@@ -10,14 +10,26 @@ EMBEDDED SYSTEM DESIGN
 ```c
 /*
 Write a program that asks for an 8-bit number from the user.
-
-If the number is -1, exit the program.
-Print out "GOOD" , if the total number of 1's in the 8-bit number is even.
-
-Print out "BAD", if the total number of 1's in the 8-bit number is odd.
-
-Repeat the process until the user enters -1.
+ - If the number is -1, exit the program.
+ - Print out "GOOD" , if the total number of 1's in the 8-bit number is even.
+ - Print out "BAD", if the total number of 1's in the 8-bit number is odd.
+ - Repeat the process until the user enters -1. 
 */
+
+int main()
+{
+    int number;
+    number = input();
+
+    while(number != -1)
+    {
+        char counter = countOnesInBinaryForm(number);
+        printf("%s", isEven(counter) ? "GOOD\n" : "BAD\n");
+        number = input();
+    }
+
+    return 0;
+}
 ```
 
 + Q2:
