@@ -27,7 +27,7 @@ char isEven(char number)
     return ! (number % 2);
 }
 
-int askForInput()
+int input()
 {
     int number = 0;
 
@@ -40,13 +40,13 @@ int askForInput()
 int main()
 {
     int number;
-    number = askForInput();
+    number = input();
 
     while(number != -1)
     {
         char counter = countOnesInBinaryForm(number);
         printf("%s", isEven(counter) ? "GOOD\n" : "BAD\n");
-        number = askForInput();
+        number = input();
     }
 
     return 0;
