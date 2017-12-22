@@ -81,8 +81,85 @@ int main()
 ```
 
 ### Assignment 2
+
+#### Q1
+```c
+/*
+Write a class called "Blinky" that has four parameters (port, pin number, ON duration, OFF duration). 
+- Make sure that the class is compatible with the code given in Example 9 of Week 04 slides. 
+- Make sure that the class works with other ports and pin numbers.
+*/
+Blinky leds[8];
+
+void setup()
+{
+  leds[0].initialize('D', 2, 781, 515);
+  leds[1].initialize('D', 3, 2014, 1348);
+  leds[2].initialize('D', 4, 343, 573);
+  leds[3].initialize('D', 5, 678, 1839);
+  leds[4].initialize('D', 6, 342, 534);
+  leds[5].initialize('B', 0, 1478, 326);
+  leds[6].initialize('B', 1, 1859, 351);
+  leds[7].initialize('B', 2, 777, 888);
+
+  for (;;)
+  {
+    for (int i=0; i<8; i++)
+    {
+      leds[i].refresh();
+    }
+  }
+}
+```
+
 ### Assignment 3
+
+#### Q1
+```c
+/* 
+Write a program to generate the following triangle signal using PWM at OC1A. 
+Use sampling frequency of 90.91 Hz (90.91 samples per second)
+*/
+```
+
+#### Q2
+```c
+/* 
+Write a program to generate the following sinusoidal signal using PWM at OC2B. 
+Use sampling frequency of 90.91 Hz (90.91 samples per second)
+*/
+```
 ### Assignment 4
+#### Q1
+```c
+/*
+<Using the internal EEPROM>
+========= Lets start =========
+
+Value at address 0 = 77 and value at address 1 = 88 and value at address 2 = 99
+
+After erasing byte #0:
+Value at address 0 = 255 and value at address 1 = 88 and value at address 2 = 99
+
+After erasing everything:
+Value at address 0 = 255 and value at address 1 = 255 and value at address 2 = 255
+
+I am going to read the stored string character by character
+Recovered text = HELLO
+
+I am going to read the string using the ReadString function
+Recovered text = HELLO
+
+I am going to delete the string
+Here is the aftermath (starting at memory address 2)
+255
+255
+255
+255
+255
+========= Done =========
+*/
+```
 
 [Assignments]: #assignments
 [A1]: #assignment-1
