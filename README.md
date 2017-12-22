@@ -5,10 +5,13 @@
 
 * [Assignments]
   + [A1]
-  		- [Q1]
-  		- [Q2]
-  		- [Q3]
-
+  		- Q1
+  		- Q2
+  		- Q3
+	+ [A2]
+	+ [A3]
+	+ [A4]
+	
 ## Assignments
 
 ### Assignment 1
@@ -79,3 +82,9 @@ int main()
 	return 0;
 }
 ```
+
+[Assignments]: #assignments
+[A1]: #assignment-1
+[A2]: #assignment-2
+[A3]: #assignment-3
+[A4]: #assignment-4
