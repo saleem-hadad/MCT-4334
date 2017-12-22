@@ -5,9 +5,6 @@
 
 * [Assignments]
   + [A1]
-  		- Q1
-  		- Q2
-  		- Q3
 	+ [A2]
 	+ [A3]
 	+ [A4]
