@@ -1,11 +1,19 @@
-# MCT-4334
-EMBEDDED SYSTEM DESIGN
+# MCT-4334 EMBEDDED SYSTEM DESIGN
+
+
+## Contents
+
+* [Assignments]
+  + [A1]
+  		- [Q1]
+  		- [Q2]
+  		- [Q3]
 
 ## Assignments
 
-> Assignment 1
+### Assignment 1
 
-+ Q1:  
+#### Q1 
 
 ```c
 /*
@@ -32,7 +40,7 @@ int main()
 }
 ```
 
-+ Q2:
+#### Q2
 
 ```c
 
@@ -57,7 +65,7 @@ int main()
 }
 ```
 
-+ Q3:
+#### Q3
 
 ```c
 // Write a Quadratic class such that the following code runs successfully
